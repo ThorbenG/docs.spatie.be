@@ -74,7 +74,7 @@ use Spatie\Image\Manipulations;
 Use the conversions like this:
 
 ```php
-$media->getUrl('thumb') // the url to the thubmnail
+$media->getUrl('thumb') // the url to the thumbnail
 $media->getUrl('old-picture') // the url to the sepia, bordered version
 ```
 
@@ -99,7 +99,7 @@ This is how that looks like in the model:
 ```php
 // a thumbnail will be generated for this media item
 $media = $newsItem->addMedia($pathToImage)->toMediaCollection('images');
-$media->getUrl('thumb') // the url to the thubmnail
+$media->getUrl('thumb') // the url to the thumbnail
 
 //but not for this one
 $media = $newsItem->addMedia($pathToImage)->toMediaCollection('other collection');
